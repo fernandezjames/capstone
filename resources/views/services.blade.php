@@ -8,6 +8,9 @@
       <link rel="stylesheet" href="css/responsee.css">
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -80,63 +83,32 @@
       <section>
          <div id="head">
             <div class="line">
-               <h1>Amazing responsive theme based on Responsee</h1>
+               <h1>Welcome to Maharlika Suites</h1>
             </div>
          </div>
          <div id="content">
             <div class="line">
                <div class="margin">
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-paperplane_ico icon2x"></i>
-                        <h3>Lightweight</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
+                  <div class="col-lg-6">
+                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
+                      <img src="img/logo.png">
                      </div>
                   </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-display_screen icon2x"></i>
-                        <h3>Responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
+                  <div class="col-lg-6">
+                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
+                      <img src="img/logo.png">
                      </div>
                   </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-heart icon2x"></i>
-                        <h3>Intuitive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
+                  <center><div class="col-lg-12">
+                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
+                      <img src="img/logo.png">
                      </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-attachment icon2x"></i>
-                        <h3>Useful</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-reorder icon2x"></i>
-                        <h3>Responsive navigation</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-4">
-                     <div class="content-block margin-bottom">
-                        <i class="icon-mail icon2x"></i>
-                        <h3>Responsive components</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </p>
-                     </div>
-                  </div>
+                  </div></center>
                </div>
             </div>
          </div>
+         
+
          <!-- GALLERY -->	
          <div id="third-block">
             <div class="line">
