@@ -6,7 +6,7 @@
                <img src="img/logo.png">
             </div>                  
             <p class="nav-text">Custom menu text</p>
-            <div class="top-nav s-12 l-5">
+            <div class="top-nav s-12 l-5" style="height: 50px;">
                <ul class="right top-ul chevron">
                   <li><a href="{{URL::Route('home')}}">Home</a>
                   </li>
@@ -32,7 +32,7 @@
                   <img src="img/logo.png">
                </li>
             </ul>
-            <div class="top-nav s-12 l-5">
+            <div class="top-nav s-12 l-5" style="height: 50px;">
                <ul class="top-ul chevron">
                   
                   
