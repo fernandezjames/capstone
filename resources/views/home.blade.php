@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
     <!--   <link rel="stylesheet" type="text/css" href="bootstrap/"> -->
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
@@ -25,6 +26,13 @@
 
       
    </head>
+<!--    <style type="text/css">
+     @media (min-width: 768px) {
+  .modal-dialog {
+    width: 100% !important;    // by default its 600px.
+    margin: 30px auto !important;
+  }
+   </style> -->
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       @include('nav')
@@ -35,76 +43,42 @@
             <div id="owl-demo" class="owl-carousel owl-theme">
                <div class="item">
                   <img src="img/front.jpg" alt="">
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Theme based on Responsee framework</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>With amazing responsive carousel
-                           </p>
-                        </div>
-                     </div>
-                  </div>
                </div>
                <div class="item">
                   <img src="img/room.jpg" alt="">
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Build new layout in 10 minutes!</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Lightweight, more intuitive and useful responsive CSS framework
-                           </p>
-                        </div>
-                     </div>
-                  </div>
                </div>
                <div class="item">
                   <img src="img/room1.jpg" alt="">
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>Design theme is under the MIT license</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Best theme based on Responsee framework
-                           </p>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>
          <!-- FIRST BLOCK --> 	
          <div id="first-block">
             <div class="line">
-               <h2>Some awesome blocks</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+               <h2>ATTRACTIONS</h2><p>
                </p>
                <div class="margin">
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-paperplane_ico icon2x"></i>
-                     <h3>About</h3>
+                     <i class="fa fa-beer fa-2x"></i>
+                     <h3>Restobar</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-star icon2x"></i>
-                     <h3>Company</h3>
+                     <i class="fa fa-music fa-2x"></i>
+                     <h3>Live Band</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-message icon2x"></i>
-                     <h3>Services</h3>
+                     <i class="fa fa-tint fa-2x"></i>
+                     <h3>Pool</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-mail icon2x"></i>
-                     <h3>Contact</h3>
+                     <i class="fa fa-cutlery fa-2x"></i>
+                     <h3>Catering Services</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
@@ -122,36 +96,7 @@
                </div>
             </div>
          </div>
-         <!-- GALLERY --> 	
-         <div id="third-block">
-            <div class="line">
-               <h2>Responsive gallery</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-               </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/first-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/second-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/third-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/fourth-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
+
          <div id="fourth-block">
             <div class="line">
                <div id="owl-demo2" class="owl-carousel owl-theme">
@@ -200,7 +145,7 @@
               <div class="modal-body">
                 <div class="container">
                   <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
+                  <div class="col-md-12">
                     <div class="panel panel-login">
                       <div class="panel-heading">
                         <div class="row">
@@ -244,18 +189,27 @@
                                 </div>
                               </div>
                             </form>
-                            <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                            <form id="signup"  method="POST" role="form" style="display: none;">
+                              <div class="form-group">
+                                <input type="text" name="firstname" id="firstname" tabindex="1" class="form-control" placeholder="First Name" value="">
+                              </div>
+                               <div class="form-group">
+                                <input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="Last Name" value="">
+                              </div>
+                               <div class="form-group">
+                                <input type="text" name="mobile" id="mobile" tabindex="1" class="form-control" placeholder="Phone Number" value="">
+                              </div>
                               <div class="form-group">
                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                               </div>
                               <div class="form-group">
-                                <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                <input type="email" name="emailaddress" id="emailaddress" tabindex="1" class="form-control" placeholder="Email Address" value="">
                               </div>
                               <div class="form-group">
                                 <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                               </div>
                               <div class="form-group">
-                                <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                <input type="password" name="repeatpassword" id="repeatpassword" tabindex="2" class="form-control" placeholder="Confirm Password">
                               </div>
                               <div class="form-group">
                                 <div class="row">
@@ -397,13 +351,13 @@
 
     $('#login-form-link').click(function(e) {
     $("#login-form").delay(100).fadeIn(100);
-    $("#register-form").fadeOut(100);
+    $("#signup").fadeOut(100);
     $('#register-form-link').removeClass('active');
     $(this).addClass('active');
     e.preventDefault();
   });
   $('#register-form-link').click(function(e) {
-    $("#register-form").delay(100).fadeIn(100);
+    $("#signup").delay(100).fadeIn(100);
     $("#login-form").fadeOut(100);
     $('#login-form-link').removeClass('active');
     $(this).addClass('active');

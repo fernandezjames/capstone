@@ -10,7 +10,7 @@
                <ul class="right top-ul chevron">
                   <li><a href="{{URL::Route('home')}}">Home</a>
                   </li>
-                  <li><a href="{{URL::Route('services')}}">Rooms</a>
+                  <li><a href="{{URL::Route('rooms')}}">Rooms</a>
                   </li>
                   <li>
                      <a>About</a>           

@@ -95,4 +95,12 @@
   background-color: #1CA347;
   border-color: #1CA347;
 }
+/* Container */
+.container {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
 
