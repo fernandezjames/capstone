@@ -23,104 +23,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 
-      <!--login template-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
-      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-      <!--[if lt IE 9]>
-	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-      <![endif]-->
       
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       @include('nav')
       <section>
-                 <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-          <div class="modal-dialog">
-          
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"></h4>
-              </div>
-              <div class="modal-body">
-                <div class="container">
-                  <div class="card"></div>
-                    <div class="card">
-                      <h1 class="title">Login</h1>
-                      <form>
-                        <div class="input-container">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Username</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Password</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="button-container">
-                          <button><span>Go</span></button>
-                        </div>
-                        <div class="footer"><a href="#">Forgot your password?</a></div>
-                      </form>
-                    </div>
-                    <div class="card alt">
-                      <div class="toggle"></div>
-                      <h1 class="title">Register
-                        <div class="close"></div>
-                      </h1>
-                      <form id="signup" method="POST">
-                        <div class="input-container col-lg-4">
-                          <input type="text" id="firstname" name="firstname"/>
-                          <label for="firstname">First Name *</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container col-lg-4">
-                          <input type="text" id="lastname" name="lastname"/>
-                          <label for="lastname">Last Name *</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container  col-lg-4">
-                          <input type="text" id="emailaddress" name="emailaddress"/>
-                          <label for="email">Email *</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container col-lg-4">
-                          <input type="text" id="username" name="username" />
-                          <label for="username">Username *</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container col-lg-4">
-                          <input type="password" id="password" name="password"/>
-                          <label for="password">Password *</label>
-                          <div class="bar"></div>
-                        </div>
-                        <div class="input-container col-lg-4">
-                          <input type="password" id="repeatpassword" name="repeatpassword"/>
-                          <label for="repeatpassword">Repeat Password *</label>
-                          <div class="bar"></div>
-                        </div>
-                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <div class="button-container">
-                          <button type="submit"><span>Submit</span></button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+
          <!-- CAROUSEL -->  	
          <div id="carousel">
             <div id="owl-demo" class="owl-carousel owl-theme">
@@ -283,6 +192,98 @@
             </div>
          </div>
       </footer>
+                       <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog"  style="width:500px;">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login">
+                      <div class="panel-heading">
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <a href="#" class="active" id="login-form-link">Login</a>
+                          </div>
+                          <div class="col-xs-6">
+                            <a href="#" id="register-form-link">Register</a>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                              <div class="form-group">
+                                <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                              </div>
+                              <div class="form-group">
+                                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                              </div>
+                              <div class="form-group text-center">
+                                <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                <label for="remember"> Remember Me</label>
+                              </div>
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col-sm-6 col-sm-offset-3">
+                                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="text-center">
+                                      <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                            <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                              <div class="form-group">
+                                <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                              </div>
+                              <div class="form-group">
+                                <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                              </div>
+                              <div class="form-group">
+                                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                              </div>
+                              <div class="form-group">
+                                <div class="row">
+                                  <div class="col-sm-6 col-sm-offset-3">
+                                   <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now" style="width:150px;">
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script  src="js/index.js"></script>
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> 
@@ -395,6 +396,27 @@
               
             });
         });
+      </script>
+      <script type="text/javascript">
+        $(function() {
+
+    $('#login-form-link').click(function(e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+
+});
+
       </script>
       
    </body>
