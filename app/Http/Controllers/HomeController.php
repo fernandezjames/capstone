@@ -15,4 +15,13 @@ class HomeController extends Controller
 	public function product(){
 		return view('product');
 	}
+	public function services(){
+		return view('services');
+	}
+	public function gallery(){
+		return view('gallery');
+	}
+	public function contact(){
+		return view('contact');
+	}
 }

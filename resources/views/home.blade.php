@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
       <link rel="stylesheet" href="css/style.css">
+    <!--   <link rel="stylesheet" type="text/css" href="bootstrap/"> -->
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -46,10 +47,20 @@
                      <ul class="right top-ul chevron">
                         <li><a href="{{URL::Route('home')}}">Home</a>
                         </li>
-                        <li><a href="../design/product.html">Product</a>
+                        <li>
+                           <a>Rooms</a>           
+                           <ul>
+                              <li><a>Single Room</a>
+                              </li>
+                              <li><a>Family Room</a>
+                              </li>
+                              <li><a>Family Suite</a>             
+                              </li>
+                           </ul>
                         </li>
-                        <li><a href="../design/services.html">Services</a>
+                        <li><a href="{{URL::Route('product')}}">About</a>
                         </li>
+                       
                      </ul>
                   </div>
                   <ul class="s-12 l-2">
@@ -59,29 +70,9 @@
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="../design/gallery.html">Gallery</a>
-                        </li>
-                        <li>
-                           <a>Company</a>			    
-                           <ul>
-                              <li><a>Company 1</a>
-                              </li>
-                              <li><a>Company 2</a>
-                              </li>
-                              <li>
-                                 <a>Company 3</a>				  
-                                 <ul>
-                                    <li><a>Company 3-1</a>
-                                    </li>
-                                    <li><a>Company 3-2</a>
-                                    </li>
-                                    <li><a>Company 3-3</a>
-                                    </li>
-                                 </ul>
-                              </li>
-                           </ul>
-                        </li>
-                        <li><a data-toggle="modal" data-target="#myModal">Login</a>
+                        
+                        
+                        <li><a class="pull-right" data-toggle="modal" data-target="#myModal">Login</a>
                         </li>
                      </ul> 
                   </div>
@@ -128,17 +119,32 @@
                         <div class="close"></div>
                       </h1>
                       <form>
-                        <div class="input-container">
+                        <div class="input-container col-lg-4">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">First Name</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container col-lg-4">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Last Name</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container  col-lg-4">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Email</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container col-lg-4">
                           <input type="#{type}" id="#{label}" required="required"/>
                           <label for="#{label}">Username</label>
                           <div class="bar"></div>
                         </div>
-                        <div class="input-container">
+                        <div class="input-container col-lg-4">
                           <input type="#{type}" id="#{label}" required="required"/>
                           <label for="#{label}">Password</label>
                           <div class="bar"></div>
                         </div>
-                        <div class="input-container">
+                        <div class="input-container col-lg-4">
                           <input type="#{type}" id="#{label}" required="required"/>
                           <label for="#{label}">Repeat Password</label>
                           <div class="bar"></div>
@@ -341,5 +347,11 @@
          });	
           
       </script> 
+      <script type="text/javascript">
+         $('#myModal').on('show.bs.modal', function () {
+    $('.modal .modal-body').css('overflow-y', 'auto'); 
+    $('.modal .modal-body').css('max-height', $(window).height() * 0.7);
+});
+      </script>
    </body>
 </html>

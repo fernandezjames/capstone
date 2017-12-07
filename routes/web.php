@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::get('/home', array('uses' => 'HomeController@home', 'as' => 'home'));
 Route::get('/product', array('uses' => 'HomeController@product', 'as' => 'product'));
+Route::get('/contact', array('uses' => 'HomeController@contact', 'as' => 'contact'));
+Route::get('/gallery', array('uses' => 'HomeController@gallery', 'as' => 'gallery'));
+Route::get('/services', array('uses' => 'HomeController@services', 'as' => 'services'));
+
