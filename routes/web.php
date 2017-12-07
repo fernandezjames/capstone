@@ -21,3 +21,4 @@ Route::get('/contact', array('uses' => 'HomeController@contact', 'as' => 'contac
 Route::get('/gallery', array('uses' => 'HomeController@gallery', 'as' => 'gallery'));
 Route::get('/services', array('uses' => 'HomeController@services', 'as' => 'services'));
 
+Route::post('/save', array('uses' => 'HomeController@register', 'as' => 'register'));
