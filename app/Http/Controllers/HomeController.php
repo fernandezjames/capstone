@@ -27,6 +27,7 @@ class HomeController extends Controller
 	public function register(){
 		$data = Request::all();
 		 return response()->json($data);
+	}	 
 	public function history(){
 		return view('history');
 	}
