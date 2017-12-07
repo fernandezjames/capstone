@@ -24,4 +24,10 @@ class HomeController extends Controller
 	public function contact(){
 		return view('contact');
 	}
+	public function history(){
+		return view('history');
+	}
+	public function mission(){
+		return view('mission');
+	}
 }

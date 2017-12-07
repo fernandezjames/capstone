@@ -10,19 +10,20 @@
                <ul class="right top-ul chevron">
                   <li><a href="{{URL::Route('home')}}">Home</a>
                   </li>
+                  <li><a href="{{URL::Route('services')}}">Rooms</a>
+                  </li>
                   <li>
-                     <a>Rooms</a>           
+                     <a>About</a>           
                      <ul>
-                        <li><a>Single Room</a>
+                        <li><a href="{{URL::Route('contact')}}">Contacts</a>
                         </li>
-                        <li><a>Family Room</a>
+                        <li><a href="{{URL::Route('mission')}}">Mission&Vision</a>
                         </li>
-                        <li><a>Family Suite</a>             
+                        <li><a href="{{URL::Route('history')}}">History</a>             
                         </li>
                      </ul>
                   </li>
-                  <li><a href="{{URL::Route('product')}}">About</a>
-                  </li>
+                  
                  
                </ul>
             </div>
