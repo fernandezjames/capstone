@@ -106,6 +106,7 @@
                           <label for="repeatpassword">Repeat Password *</label>
                           <div class="bar"></div>
                         </div>
+                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="button-container">
                           <button type="submit"><span>Submit</span></button>
                         </div>
@@ -334,6 +335,9 @@
                         validators: {
                             notEmpty: {
                                 message: 'Email address is required'
+                            },
+                            emailAddress: {
+                              message: 'The input is not a valid email address'
                             }
                         }
                     },
@@ -372,24 +376,24 @@
                   })
                   .then((save) => {
                     if (save) {
-                      swal("Success! Your information has been saved!", {
-                        icon: "success",
+                      $.ajax({
+                        headers:{'X-CSRF-Token': $('input[name="_token"]').val()},
+                        url: "{{URL::Route('register')}}",
+                        type: 'POST',
+                        data: $form.serialize(),
+                        success: function(result) {
+                          console.log(result);
+                        }
                       });
                     } else {
                       swal("Error!");
                     }
                   });
               // Use Ajax to submit form data
-              // $.ajax({
-              //     url: $form.attr('action'),
-              //     type: 'POST',
-              //     data: $form.serialize(),
-              //     success: function(result) {
-              //         // ... Process the result ...
-              //     }
-              // });
+              
             });
         });
       </script>
+      
    </body>
 </html>

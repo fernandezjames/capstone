@@ -24,3 +24,4 @@ Route::get('/history', array('uses' => 'HomeController@history', 'as' => 'histor
 Route::get('/mission', array('uses' => 'HomeController@mission', 'as' => 'mission'));
 
 
+Route::post('/save', array('uses' => 'HomeController@register', 'as' => 'register'));
