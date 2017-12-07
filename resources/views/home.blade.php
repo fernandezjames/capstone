@@ -25,6 +25,13 @@
 
       
    </head>
+<!--    <style type="text/css">
+     @media (min-width: 768px) {
+  .modal-dialog {
+    width: 100% !important;    // by default its 600px.
+    margin: 30px auto !important;
+  }
+   </style> -->
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       @include('nav')
@@ -200,7 +207,7 @@
               <div class="modal-body">
                 <div class="container">
                   <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
+                  <div class="col-md-12">
                     <div class="panel panel-login">
                       <div class="panel-heading">
                         <div class="row">
@@ -244,18 +251,27 @@
                                 </div>
                               </div>
                             </form>
-                            <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                            <form id="signup"  method="POST" role="form" style="display: none;">
+                              <div class="form-group">
+                                <input type="text" name="firstname" id="firstname" tabindex="1" class="form-control" placeholder="First Name" value="">
+                              </div>
+                               <div class="form-group">
+                                <input type="text" name="lastname" id="lastname" tabindex="1" class="form-control" placeholder="Last Name" value="">
+                              </div>
+                               <div class="form-group">
+                                <input type="text" name="mobile" id="mobile" tabindex="1" class="form-control" placeholder="Phone Number" value="">
+                              </div>
                               <div class="form-group">
                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                               </div>
                               <div class="form-group">
-                                <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                <input type="email" name="emailaddress" id="emailaddress" tabindex="1" class="form-control" placeholder="Email Address" value="">
                               </div>
                               <div class="form-group">
                                 <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
                               </div>
                               <div class="form-group">
-                                <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                <input type="password" name="repeatpassword" id="repeatpassword" tabindex="2" class="form-control" placeholder="Confirm Password">
                               </div>
                               <div class="form-group">
                                 <div class="row">
@@ -397,13 +413,13 @@
 
     $('#login-form-link').click(function(e) {
     $("#login-form").delay(100).fadeIn(100);
-    $("#register-form").fadeOut(100);
+    $("#signup").fadeOut(100);
     $('#register-form-link').removeClass('active');
     $(this).addClass('active');
     e.preventDefault();
   });
   $('#register-form-link').click(function(e) {
-    $("#register-form").delay(100).fadeIn(100);
+    $("#signup").delay(100).fadeIn(100);
     $("#login-form").fadeOut(100);
     $('#login-form-link').removeClass('active');
     $(this).addClass('active');
