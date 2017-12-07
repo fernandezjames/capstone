@@ -20,5 +20,8 @@ Route::get('/product', array('uses' => 'HomeController@product', 'as' => 'produc
 Route::get('/contact', array('uses' => 'HomeController@contact', 'as' => 'contact'));
 Route::get('/gallery', array('uses' => 'HomeController@gallery', 'as' => 'gallery'));
 Route::get('/services', array('uses' => 'HomeController@services', 'as' => 'services'));
+Route::get('/history', array('uses' => 'HomeController@history', 'as' => 'history'));
+Route::get('/mission', array('uses' => 'HomeController@mission', 'as' => 'mission'));
+
 
 Route::post('/save', array('uses' => 'HomeController@register', 'as' => 'register'));
