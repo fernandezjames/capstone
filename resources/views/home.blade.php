@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
       <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
       <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -122,32 +122,32 @@
                       <form id="signup" method="POST">
                         <div class="input-container col-lg-4">
                           <input type="text" id="firstname" name="firstname"/>
-                          <label for="firstname">First Name</label>
+                          <label for="firstname">First Name *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
                           <input type="text" id="lastname" name="lastname"/>
-                          <label for="lastname">Last Name</label>
+                          <label for="lastname">Last Name *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container  col-lg-4">
                           <input type="text" id="emailaddress" name="emailaddress"/>
-                          <label for="email">Email</label>
+                          <label for="email">Email *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
                           <input type="text" id="username" name="username" />
-                          <label for="username">Username</label>
+                          <label for="username">Username *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
                           <input type="password" id="password" name="password"/>
-                          <label for="password">Password</label>
+                          <label for="password">Password *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
                           <input type="password" id="repeatpassword" name="repeatpassword"/>
-                          <label for="repeatpassword">Repeat Password</label>
+                          <label for="repeatpassword">Repeat Password *</label>
                           <div class="bar"></div>
                         </div>
                         <div class="button-container">
@@ -359,36 +359,79 @@
         $('document').ready(function(){
             $('#signup').formValidation({
                 framework: 'bootstrap',
-                icon: {
-                    valid: 'glyphicon glyphicon-ok',
-                    invalid: 'glyphicon glyphicon-remove',
-                    validating: 'glyphicon glyphicon-refresh'
-                },
                 fields: {
                     firstname: {
                         validators: {
                             notEmpty: {
-                                message: 'The first name is required'
-                            },
-                            stringLength: {
-                                min: 6,
-                                max: 30,
-                                message: 'The username must be more than 6 and less than 30 characters long'
-                            },
-                            regexp: {
-                                regexp: /^[a-zA-Z0-9_\.]+$/,
-                                message: 'The username can only consist of alphabetical, number, dot and underscore'
+                                message: 'First name is required'
                             }
                         }
                     },
-                    password: {
+                    lastname: {
                         validators: {
                             notEmpty: {
-                                message: 'The password is required'
+                                message: 'Last name is required'
                             }
                         }
-                    }
+                    },
+                    emailaddress: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email address is required'
+                            }
+                        }
+                    },
+                    username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Username is required'
+                            }
+                        }
+                    },
+                    repeatpassword: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Password is required'
+                            },
+                            identical: {
+                                field: 'password',
+                                message: 'The password and its confirm are not the same'
+                            }
+                        }
+                    },
                 }
+            })
+            .on('success.form.fv', function(e) {
+              // Prevent form submission
+              e.preventDefault();
+
+              var $form = $(e.target),
+                  fv    = $form.data('formValidation');
+                  swal({
+                    title: "Are you sure?",
+                    text: "You are trying to save this data!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                  })
+                  .then((save) => {
+                    if (save) {
+                      swal("Success! Your information has been saved!", {
+                        icon: "success",
+                      });
+                    } else {
+                      swal("Error!");
+                    }
+                  });
+              // Use Ajax to submit form data
+              // $.ajax({
+              //     url: $form.attr('action'),
+              //     type: 'POST',
+              //     data: $form.serialize(),
+              //     success: function(result) {
+              //         // ... Process the result ...
+              //     }
+              // });
             });
         });
       </script>
