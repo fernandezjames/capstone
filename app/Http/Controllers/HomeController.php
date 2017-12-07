@@ -7,6 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Request;
+use App\Models\User;
 class HomeController extends Controller
 {
 	public function home(){
@@ -26,7 +27,14 @@ class HomeController extends Controller
 	}
 	public function register(){
 		$data = Request::all();
-		 return response()->json($data);
+		$dataSave = new User();
+		$dataSave['user_name'] = $data['username'];
+		$dataSave['password'] = $data['password'];
+		$dataSave['first_name'] = $data['firstname'];
+		$dataSave['last_name'] = $data['lastname'];
+		$dataSave['mobile_no'] = '09056318186';
+		$dataSave->save();
+		return response()->json(["success" => "yes"]);
 	}	 
 	public function history(){
 		return view('history');

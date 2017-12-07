@@ -383,13 +383,15 @@
                         data: $form.serialize(),
                         success: function(result) {
                           console.log(result);
+                          if(result.success == 'yes'){
+                            swal("Saved!", "Data has been approved", "success");
+                          }
                         }
                       });
                     } else {
                       swal("Error!");
                     }
                   });
-              // Use Ajax to submit form data
               
             });
         });
