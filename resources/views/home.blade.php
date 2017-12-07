@@ -32,6 +32,7 @@
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
+      
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
@@ -118,39 +119,39 @@
                       <h1 class="title">Register
                         <div class="close"></div>
                       </h1>
-                      <form>
+                      <form id="signup" method="POST">
                         <div class="input-container col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">First Name</label>
+                          <input type="text" id="firstname" name="firstname"/>
+                          <label for="firstname">First Name</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Last Name</label>
+                          <input type="text" id="lastname" name="lastname"/>
+                          <label for="lastname">Last Name</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container  col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Email</label>
+                          <input type="text" id="emailaddress" name="emailaddress"/>
+                          <label for="email">Email</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Username</label>
+                          <input type="text" id="username" name="username" />
+                          <label for="username">Username</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Password</label>
+                          <input type="password" id="password" name="password"/>
+                          <label for="password">Password</label>
                           <div class="bar"></div>
                         </div>
                         <div class="input-container col-lg-4">
-                          <input type="#{type}" id="#{label}" required="required"/>
-                          <label for="#{label}">Repeat Password</label>
+                          <input type="password" id="repeatpassword" name="repeatpassword"/>
+                          <label for="repeatpassword">Repeat Password</label>
                           <div class="bar"></div>
                         </div>
                         <div class="button-container">
-                          <button><span>Next</span></button>
+                          <button type="submit"><span>Submit</span></button>
                         </div>
                       </form>
                     </div>
@@ -327,7 +328,9 @@
       </footer>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script  src="js/index.js"></script>
-      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> 
+      <script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
+      <script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>  
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({
@@ -348,10 +351,46 @@
           
       </script> 
       <script type="text/javascript">
-         $('#myModal').on('show.bs.modal', function () {
-    $('.modal .modal-body').css('overflow-y', 'auto'); 
-    $('.modal .modal-body').css('max-height', $(window).height() * 0.7);
-});
+        $('#myModal').on('show.bs.modal', function () {
+          $('.modal .modal-body').css('overflow-y', 'auto'); 
+          $('.modal .modal-body').css('max-height', $(window).height() * 0.7);
+        });
+
+        $('document').ready(function(){
+            $('#signup').formValidation({
+                framework: 'bootstrap',
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    firstname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The first name is required'
+                            },
+                            stringLength: {
+                                min: 6,
+                                max: 30,
+                                message: 'The username must be more than 6 and less than 30 characters long'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9_\.]+$/,
+                                message: 'The username can only consist of alphabetical, number, dot and underscore'
+                            }
+                        }
+                    },
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The password is required'
+                            }
+                        }
+                    }
+                }
+            });
+        });
       </script>
    </body>
 </html>
