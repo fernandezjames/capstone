@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
     <!--   <link rel="stylesheet" type="text/css" href="bootstrap/"> -->
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
@@ -87,31 +88,30 @@
          <!-- FIRST BLOCK --> 	
          <div id="first-block">
             <div class="line">
-               <h2>Some awesome blocks</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+               <h2>OTHER SERVICES</h2><p>
                </p>
                <div class="margin">
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-paperplane_ico icon2x"></i>
-                     <h3>About</h3>
+                     <i class="fa fa-beer fa-2x"></i>
+                     <h3>Restobar</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-star icon2x"></i>
-                     <h3>Company</h3>
+                     <i class="fa fa-music fa-2x"></i>
+                     <h3>Live Band</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-message icon2x"></i>
-                     <h3>Services</h3>
+                     <i class="fa fa-tint fa-2x"></i>
+                     <h3>Pool</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-mail icon2x"></i>
-                     <h3>Contact</h3>
+                     <i class="fa fa-cutlery fa-2x"></i>
+                     <h3>Catering Services</h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                      </p>
                   </div>
@@ -129,36 +129,7 @@
                </div>
             </div>
          </div>
-         <!-- GALLERY --> 	
-         <div id="third-block">
-            <div class="line">
-               <h2>Responsive gallery</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-               </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/first-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/second-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/third-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/fourth-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
+
          <div id="fourth-block">
             <div class="line">
                <div id="owl-demo2" class="owl-carousel owl-theme">
