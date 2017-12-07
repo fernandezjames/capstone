@@ -39,7 +39,7 @@ nav {
 	background: none repeat scroll 0 0 #00464f;
 }
 .top-nav li.logo a, .top-nav li.logo.active-item a, .top-nav .logo {
-	background: none repeat scroll 0 0 #2fcbe0;
+	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 }
 nav ul li ul li {
 	text-align: left;

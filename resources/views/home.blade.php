@@ -8,13 +8,25 @@
       <link rel="stylesheet" href="css/responsee.css">
       <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="css/style.css">
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
       <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
       <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
+      <script type="text/javascript" src="js/responsee.js"></script> 
+
+      <!--modal-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+      <!--login template-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -27,7 +39,7 @@
             <div class="line">
                <div class="top-nav">              
                   <div class="logo hide-l">
-                     <a href="../public/img/logo.png"></a>
+                     <img src="img/logo.png">
                   </div>                  
                   <p class="nav-text">Custom menu text</p>
                   <div class="top-nav s-12 l-5">
@@ -42,7 +54,7 @@
                   </div>
                   <ul class="s-12 l-2">
                      <li class="logo hide-s hide-m">
-                        <a href="../design/">DESIGN <br /><strong>THEME</strong></a>
+                        <img src="img/logo.png">
                      </li>
                   </ul>
                   <div class="top-nav s-12 l-5">
@@ -69,7 +81,7 @@
                               </li>
                            </ul>
                         </li>
-                        <li><a href="../design/contact.html">Contact</a>
+                        <li><a data-toggle="modal" data-target="#myModal">Login</a>
                         </li>
                      </ul> 
                   </div>
@@ -78,6 +90,73 @@
          </nav>
       </header>
       <section>
+                 <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="card"></div>
+                    <div class="card">
+                      <h1 class="title">Login</h1>
+                      <form>
+                        <div class="input-container">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Username</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Password</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="button-container">
+                          <button><span>Go</span></button>
+                        </div>
+                        <div class="footer"><a href="#">Forgot your password?</a></div>
+                      </form>
+                    </div>
+                    <div class="card alt">
+                      <div class="toggle"></div>
+                      <h1 class="title">Register
+                        <div class="close"></div>
+                      </h1>
+                      <form>
+                        <div class="input-container">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Username</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Password</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="input-container">
+                          <input type="#{type}" id="#{label}" required="required"/>
+                          <label for="#{label}">Repeat Password</label>
+                          <div class="bar"></div>
+                        </div>
+                        <div class="button-container">
+                          <button><span>Next</span></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
          <!-- CAROUSEL -->  	
          <div id="carousel">
             <div id="owl-demo" class="owl-carousel owl-theme">
@@ -240,6 +319,8 @@
             </div>
          </div>
       </footer>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="js/index.js"></script>
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
