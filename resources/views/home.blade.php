@@ -34,7 +34,7 @@
          <div id="carousel">
             <div id="owl-demo" class="owl-carousel owl-theme">
                <div class="item">
-                  <img src="img/first.jpg" alt="">      
+                  <img src="img/front.jpg" alt="">
                   <div class="carousel-text">
                      <div class="line">
                         <div class="s-12 l-9">
@@ -48,7 +48,7 @@
                   </div>
                </div>
                <div class="item">
-                  <img src="img/second.jpg" alt="">      
+                  <img src="img/room.jpg" alt="">
                   <div class="carousel-text">
                      <div class="line">
                         <div class="s-12 l-9">
@@ -62,7 +62,7 @@
                   </div>
                </div>
                <div class="item">
-                  <img src="img/third.jpg" alt="">      
+                  <img src="img/room1.jpg" alt="">
                   <div class="carousel-text">
                      <div class="line">
                         <div class="s-12 l-9">
@@ -117,10 +117,6 @@
                <div class="margin-bottom">
                   <div class="margin">
                      <article class="s-12 l-8 center">
-                        <h1>Amazing title</h1>
-                        <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                        </p>
-                        <a class="button s-12 l-4 center" href="product.html">Read more</a>  			
                      </article>
                   </div>
                </div>
@@ -182,12 +178,11 @@
       <footer>
          <div class="line">
             <div class="s-12 l-6">
-               <p>Copyright 2015, Vision Design - graphic zoo
-               </p>
+
             </div>
             <div class="s-12 l-6">
                <p class="right">
-                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Maharlika Suites</a>
                </p>
             </div>
          </div>
