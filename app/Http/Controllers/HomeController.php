@@ -11,35 +11,24 @@ use App\Models\User;
 class HomeController extends Controller
 {
 	public function home(){
-		return view('home');
+		return view('user/home');
 	}
 	public function product(){
-		return view('product');
+		return view('user/product');
 	}
 	public function rooms(){
-		return view('rooms');
+		return view('user/rooms');
 	}
 	public function gallery(){
-		return view('gallery');
+		return view('user/gallery');
 	}
 	public function contact(){
-		return view('contact');
-	}
-	public function register(){
-		$data = Request::all();
-		$dataSave = new User();
-		$dataSave['user_name'] = $data['username'];
-		$dataSave['password'] = $data['password'];
-		$dataSave['first_name'] = $data['firstname'];
-		$dataSave['last_name'] = $data['lastname'];
-		$dataSave['mobile_no'] = '09056318186';
-		$dataSave->save();
-		return response()->json(["success" => "yes"]);
-	}	 
+		return view('user/contact');
+	} 
 	public function history(){
-		return view('history');
+		return view('user/history');
 	}
 	public function mission(){
-		return view('mission');
+		return view('user/mission');
 	}
 }

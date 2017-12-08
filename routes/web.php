@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware' => ['auth', 'admin']], function(){
+	Route::group(array('prefix' => 'admin/'), function(){
+
+	});
+});
+
+Route::group(['middleware' => ['auth', 'user']], function(){
+	Route::group(array('prefix' => 'user/'), function(){
+		
+	});
+});
+
 Route::get('/home', array('uses' => 'HomeController@home', 'as' => 'home'));
 Route::get('/product', array('uses' => 'HomeController@product', 'as' => 'product'));
 Route::get('/contact', array('uses' => 'HomeController@contact', 'as' => 'contact'));

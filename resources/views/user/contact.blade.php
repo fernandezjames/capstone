@@ -30,7 +30,7 @@
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
-      @include('nav')
+      @include('user/nav')
       <section>
          <div id="head">
             <div class="line">
