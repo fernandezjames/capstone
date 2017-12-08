@@ -39,6 +39,14 @@
           
           height: 500px !important;
       }
+      .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+          display: block;
+          width: 100%;
+          height: 100%;
+      }
+      .thumbnail {
+        height: 80px;
+      }
    </style>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
@@ -52,17 +60,17 @@
          <div id="content">
             <div class="line">
                <div class="margin">
-                  <div class="col-lg-6">
+                  <center><div class="col-lg-6 col-md-6">
                      <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
                       <img src="img/logo.png" data-toggle="modal" data-target="#single">
                      </div>
-                  </div>
-                  <div class="col-lg-6">
+                  </div></center>
+                  <center><div class="col-lg-6 col-md-6">
                      <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
                        <img src="img/logo.png" data-toggle="modal" data-target="#family">
                      </div>
-                  </div>
-                  <center><div class="col-lg-12">
+                  </div></center>
+                  <center><div class="col-lg-12 col-md-12">
                      <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
                       <img src="img/logo.png" data-toggle="modal" data-target="#familysuite">
                      </div>
@@ -162,22 +170,22 @@
                                                    <!-- Carousel items -->
                                                    <div class="carousel-inner">
                                                        <div class="active item" data-slide-number="0">
-                                                       <img src="http://placehold.it/770x300&text=one"></div>
+                                                       <img src="img/rooms/single.jpg"></div>
 
                                                        <div class="item" data-slide-number="1">
-                                                       <img src="http://placehold.it/770x300&text=two"></div>
+                                                       <img src="img/rooms/single1.jpg"></div>
 
                                                        <div class="item" data-slide-number="2">
-                                                       <img src="http://placehold.it/770x300&text=three"></div>
+                                                       <img src="img/rooms/single2.jpg"></div>
 
                                                        <div class="item" data-slide-number="3">
-                                                       <img src="http://placehold.it/770x300&text=four"></div>
+                                                       <img src="img/rooms/single3.jpg"></div>
 
                                                        <div class="item" data-slide-number="4">
-                                                       <img src="http://placehold.it/770x300&text=five"></div>
+                                                       <img src="img/rooms/suites2.jpg"></div>
 
                                                        <div class="item" data-slide-number="5">
-                                                       <img src="http://placehold.it/770x300&text=six"></div>
+                                                       <img src="img/rooms/family3.jpg"></div>
                                                    </div><!-- Carousel nav -->
                                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -235,27 +243,27 @@
                                        <!-- Bottom switcher of slider -->
                                        <ul class="hide-bullets">
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                                               <a class="thumbnail" id="carousel-selector-0"><img src="img/rooms/single.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                                               <a class="thumbnail" id="carousel-selector-1"><img src="img/rooms/single1.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                                               <a class="thumbnail" id="carousel-selector-2"><img src="img/rooms/single2.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                                               <a class="thumbnail" id="carousel-selector-3"><img src="img/rooms/single3.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                                               <a class="thumbnail" id="carousel-selector-4"><img src="img/rooms/suites2.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+                                               <a class="thumbnail" id="carousel-selector-5"><img src="img/rooms/family3.jpg"></a>
                                            </li>
                                        </ul>                 
                                </div>
@@ -295,22 +303,22 @@
                                                    <!-- Carousel items -->
                                                    <div class="carousel-inner">
                                                        <div class="active item" data-slide-number="0">
-                                                       <img src="http://placehold.it/770x300&text=one"></div>
+                                                       <img src="img/rooms/family.jpg"></div>
 
                                                        <div class="item" data-slide-number="1">
-                                                       <img src="http://placehold.it/770x300&text=two"></div>
+                                                       <img src="img/rooms/family2.jpg"></div>
 
                                                        <div class="item" data-slide-number="2">
-                                                       <img src="http://placehold.it/770x300&text=three"></div>
+                                                       <img src="img/rooms/family3.jpg"></div>
 
                                                        <div class="item" data-slide-number="3">
-                                                       <img src="http://placehold.it/770x300&text=four"></div>
+                                                       <img src="img/rooms/family4.jpg"></div>
 
                                                        <div class="item" data-slide-number="4">
-                                                       <img src="http://placehold.it/770x300&text=five"></div>
+                                                       <img src="img/rooms/family5.jpg"></div>
 
                                                        <div class="item" data-slide-number="5">
-                                                       <img src="http://placehold.it/770x300&text=six"></div>
+                                                       <img src="img/rooms/single.jpg"></div>
                                                    </div><!-- Carousel nav -->
                                                    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
                                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -428,22 +436,22 @@
                                                    <!-- Carousel items -->
                                                    <div class="carousel-inner">
                                                        <div class="active item" data-slide-number="0">
-                                                       <img src="http://placehold.it/770x300&text=one"></div>
+                                                       <img src="img/rooms/suites.jpg"></div>
 
                                                        <div class="item" data-slide-number="1">
-                                                       <img src="http://placehold.it/770x300&text=two"></div>
+                                                       <img src="img/rooms/suites1.jpg"></div>
 
                                                        <div class="item" data-slide-number="2">
-                                                       <img src="http://placehold.it/770x300&text=three"></div>
+                                                       <img src="img/rooms/suites2.jpg"></div>
 
                                                        <div class="item" data-slide-number="3">
-                                                       <img src="http://placehold.it/770x300&text=four"></div>
+                                                       <img src="img/rooms/suites3.jpg"></div>
 
                                                        <div class="item" data-slide-number="4">
-                                                       <img src="http://placehold.it/770x300&text=five"></div>
+                                                       <img src="img/rooms/suites5.jpg"></div>
 
                                                        <div class="item" data-slide-number="5">
-                                                       <img src="http://placehold.it/770x300&text=six"></div>
+                                                       <img src="img/rooms/family2.jpg"></div>
                                                    </div><!-- Carousel nav -->
                                                    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
                                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
