@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
 
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
@@ -47,6 +48,28 @@
       .thumbnail {
         height: 80px;
       }
+      #first-block {
+        text-align: center;
+        padding: 0px;
+        background-color: #001e22;
+
+      }
+      #first-block i {
+          background: none repeat scroll 0 0 #dd1313;
+          border-radius: 100px;
+          color: #fff;
+          line-height: 100px;
+          margin: 0 auto;
+          width: 100px;
+          margin-bottom: 20px;
+      }
+      #first-block p {
+         font-size: 17px;
+      }
+/*      #fourth-block {
+        opacity: .2;
+      }*/
+
    </style>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
@@ -80,53 +103,41 @@
          </div>
          
 
-         <!-- GALLERY -->	
-         <div id="third-block">
-            <div class="line">
-               <h2>Responsive gallery</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-               </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/first-small.jpg">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/second-small.jpg">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/third-small.jpg">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/fourth-small.jpg">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
          <div id="fourth-block">
             <div class="line">
                <div id="owl-demo2" class="owl-carousel owl-theme">
+                  
                   <div class="item">
-                     <h2>Amazing responsive template</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    <div id="first-block">
+                       <i class="fa fa-beer fa-2x"></i>
+                       <h2>Restobar</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                      </p>
+                    </div>
                   </div>
                   <div class="item">
-                     <h2>Responsive components</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     <div id="first-block">
+                         <i class="fa fa-music fa-2x"></i>
+                       <h2>Live Band</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                      </p>
+                    </div>
                   </div>
                   <div class="item">
-                     <h2>Retina ready</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     <div id="first-block">
+                         <i class="fa fa-tint fa-2x"></i>
+                       <h2>Pool</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                      </p>
+                    </div>
+                  </div>
+                  <div class="item">
+                     <div id="first-block">
+                       <i class="fa fa-cutlery fa-2x"></i>
+                       <h2>Catering</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     </p>
+                    </div>
                   </div>
                </div>
             </div>

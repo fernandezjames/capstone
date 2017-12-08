@@ -73,7 +73,7 @@ nav ul li ul li {
 	background: #fff;
 }
 #fourth-block {
-	background: rgb(0, 30, 34);
+	background: rgb(0, 30, 34, .8);
 }
 footer {
 	background: none repeat scroll 0 0 #2fcbe0;
