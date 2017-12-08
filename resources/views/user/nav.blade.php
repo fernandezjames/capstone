@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{!! asset('assets/css/style.css') !!}">
 <div>
    <header>
       <nav>
@@ -37,7 +38,7 @@
                   <ul class="top-ul chevron">
                      
                      
-                     <li><a class="pull-right" data-toggle="modal" data-target="#myModal">Login</a>
+                     <li><a data-toggle="modal" data-target="#myModal">Login</a>
                      </li>
                   </ul> 
                </div>
@@ -138,7 +139,7 @@
                                 <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
                               </div>
                               <div class="form-group">
-                                <input type="email" name="emailaddress" id="emailaddress" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
                               </div>
                               <div class="form-group">
                                 <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
@@ -170,3 +171,102 @@
           </div>
         </div>
       </div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="{!! asset('assets/formValidation/formValidation.min.js')!!}"></script>
+<script src="{!! asset('assets/formValidation/bootstrap.min.js')!!}"></script>  
+
+<script type="text/javascript">
+  $('document').ready(function(){
+      $('#signup').formValidation({
+          framework: 'bootstrap',
+          fields: {
+              firstname: {
+                  validators: {
+                      notEmpty: {
+                          message: 'First name is required'
+                      }
+                  }
+              },
+              lastname: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Last name is required'
+                      }
+                  }
+              },
+              mobile: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Phone number is required'
+                      },
+                      regexp: {
+                        message: 'The phone number can only contain the digits, spaces, -, (, ), + and .',
+                        regexp: /^[0-9\s\-()+\.]+$/
+                      }
+                  }
+              },
+              emailaddress: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Email address is required'
+                      },
+                      emailAddress: {
+                        message: 'The input is not a valid email address'
+                      }
+                  }
+              },
+              username: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Username is required'
+                      }
+                  }
+              },
+              repeatpassword: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Password is required'
+                      },
+                      identical: {
+                          field: 'password',
+                          message: 'The password and its confirm are not the same'
+                      }
+                  }
+              },
+          }
+      })
+      .on('success.form.fv', function(e) {
+        // Prevent form submission
+        e.preventDefault();
+
+        var $form = $(e.target),
+            fv    = $form.data('formValidation');
+            swal({
+              title: "Are you sure?",
+              text: "You are trying to save this data!",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            })
+            .then((save) => {
+              if (save) {
+                $.ajax({
+                  headers:{'X-CSRF-Token': $('input[name="_token"]').val()},
+                  url: "{{URL::Route('register')}}",
+                  type: 'POST',
+                  data: $form.serialize(),
+                  success: function(result) {
+                    console.log(result);
+                    if(result.success == 'yes'){
+                      swal("Saved!", "Data has been approved", "success");
+                    }
+                  }
+                });
+              } else {
+                swal("Error!");
+              }
+            });
+      });
+  });
+</script>

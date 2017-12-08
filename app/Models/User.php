@@ -8,7 +8,7 @@ use Illuminate\Auth\Authenticatable as AuthenticableTrait;
 
 class User extends \Eloquent implements Authenticatable
 {
-  	protected $table = 'user_tbl';
+  	protected $table = 'users';
  	use AuthenticableTrait;
 
 }

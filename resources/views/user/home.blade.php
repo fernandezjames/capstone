@@ -112,11 +112,9 @@
          </div>
       </footer>
                       
-      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+     
       <script  src="js/index.js"></script>
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> 
-      <script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
-      <script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>  
            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
@@ -141,100 +139,6 @@
         $('#myModal').on('show.bs.modal', function () {
           $('.modal .modal-body').css('overflow-y', 'auto'); 
           $('.modal .modal-body').css('max-height', $(window).height() * 0.7);
-        });
-
-        $('document').ready(function(){
-            $('#signup').formValidation({
-                framework: 'bootstrap',
-                fields: {
-                    firstname: {
-                        validators: {
-                            notEmpty: {
-                                message: 'First name is required'
-                            }
-                        }
-                    },
-                    lastname: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Last name is required'
-                            }
-                        }
-                    },
-                    mobile: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Phone number is required'
-                            },
-                            regexp: {
-                              message: 'The phone number can only contain the digits, spaces, -, (, ), + and .',
-                              regexp: /^[0-9\s\-()+\.]+$/
-                            }
-                        }
-                    },
-                    emailaddress: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Email address is required'
-                            },
-                            emailAddress: {
-                              message: 'The input is not a valid email address'
-                            }
-                        }
-                    },
-                    username: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Username is required'
-                            }
-                        }
-                    },
-                    repeatpassword: {
-                        validators: {
-                            notEmpty: {
-                                message: 'Password is required'
-                            },
-                            identical: {
-                                field: 'password',
-                                message: 'The password and its confirm are not the same'
-                            }
-                        }
-                    },
-                }
-            })
-            .on('success.form.fv', function(e) {
-              // Prevent form submission
-              e.preventDefault();
-
-              var $form = $(e.target),
-                  fv    = $form.data('formValidation');
-                  swal({
-                    title: "Are you sure?",
-                    text: "You are trying to save this data!",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                  })
-                  .then((save) => {
-                    if (save) {
-                      $.ajax({
-                        headers:{'X-CSRF-Token': $('input[name="_token"]').val()},
-                        url: "{{URL::Route('register')}}",
-                        type: 'POST',
-                        data: $form.serialize(),
-                        success: function(result) {
-                          console.log(result);
-                          if(result.success == 'yes'){
-                            swal("Saved!", "Data has been approved", "success");
-                          }
-                        }
-                      });
-                    } else {
-                      swal("Error!");
-                    }
-                  });
-              
-            });
         });
       </script>
       
