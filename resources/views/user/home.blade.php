@@ -4,20 +4,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
       <title>Responsive Design website template</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-      <link rel="stylesheet" href="css/style.css">
-       <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+      @include('plugins')
     <!--   <link rel="stylesheet" type="text/css" href="bootstrap/"> -->
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script> 
 
       <!--modal-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

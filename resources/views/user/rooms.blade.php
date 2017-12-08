@@ -4,34 +4,24 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
       <title>Responsive Design website template</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="css/main.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+      @include('plugins')
 
       <!-- CUSTOM STYLE -->  
-      <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
        <!--modal-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 
 
    </head>
    <style type="text/css">
+       @font-face {
+        font-family: Rise;
+        src: url("font/Rise of Kingdom.ttf");
+    }
       .carousel {
           position: relative;
           height: 500px;
@@ -49,51 +39,56 @@
         height: 80px;
       }
       #first-block {
-        text-align: center;
-        padding: 0px;
-       background: none;
+        text-align: center !important;
+        padding: 0px !important;
+       background: none !important;
 
       }
       #first-block i {
-          background: none repeat scroll 0 0 #dd1313;
-          border-radius: 100px;
+          background: none repeat scroll 0 0 #dd1313 !important;
+          border-radius: 100px !important;
           color: #fff;
-          line-height: 100px;
-          margin: 0 auto;
-          width: 100px;
-          margin-bottom: 20px;
+          line-height: 100px !important;
+          margin: 0 auto !important;
+          width: 100px !important;
+          margin-bottom: 20px !important;
       }
       #first-block p {
-         font-size: 17px;
+         font-size: 17px !important;
       }
 /*      #fourth-block {
         opacity: .2;
       }*/
-
+      .name label {
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      }
    </style>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       @include('user/nav')
       <section>
          <div id="head">
-            <div class="line">
-               <h1>Welcome to Maharlika Suites</h1>
+            <div class="line name">
+               <label style="font-size: 50px; color: #d80f0f; font-family: Rise;">Welcome to Maharlika Suites</label>
             </div>
          </div>
          <div id="content">
             <div class="line">
                <div class="margin">
                   <center><div class="col-lg-6 col-md-6">
+                    <label style="font-size: 30px; font-family: Rise;">Single Room</label>
                      <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
                       <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/single.jpg" data-toggle="modal" data-target="#single">
                      </div>
                   </div></center>
                   <center><div class="col-lg-6 col-md-6">
+                    <label style="font-size: 30px; font-family: Rise;">Family Room</label>
                      <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
                        <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/family.jpg" data-toggle="modal" data-target="#family">
                      </div>
                   </div></center>
                   <center><div class="col-lg-12 col-md-12">
+                    <label style="font-size: 30px; font-family: Rise;">Family Suite</label>
                      <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
                       <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/suites.jpg" data-toggle="modal" data-target="#familysuite">
                      </div>
@@ -555,7 +550,8 @@
 
            </div>
          </div>
-        <!--end of Modal-->                
+        <!--end of Modal-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
