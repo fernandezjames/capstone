@@ -103,7 +103,6 @@ li.L9 { background: #eee }
 
 body {
   position: relative; /* For scrollyspy */
-  padding-top: 50px; /* Account for fixed navbar */
 }
 
 /* Keep code small in tables on account of limited space */
@@ -6983,5 +6982,4 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 body {
   position: relative;
-  padding-top: 50px;
 }
