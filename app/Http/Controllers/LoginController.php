@@ -24,7 +24,7 @@ class LoginController extends Controller
 		$dataSave['password'] = $data['password'];
 		$dataSave['first_name'] = $data['firstname'];
 		$dataSave['last_name'] = $data['lastname'];
-		$dataSave['mobile_no'] = '09056318186';
+		$dataSave['mobile_no'] = $data['mobile'];
 		$dataSave->save();
 		return response()->json(["success" => "yes"]);
 	}	

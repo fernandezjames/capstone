@@ -117,6 +117,7 @@
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script> 
       <script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
       <script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>  
+           <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({
@@ -157,6 +158,17 @@
                         validators: {
                             notEmpty: {
                                 message: 'Last name is required'
+                            }
+                        }
+                    },
+                    mobile: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Phone number is required'
+                            },
+                            regexp: {
+                              message: 'The phone number can only contain the digits, spaces, -, (, ), + and .',
+                              regexp: /^[0-9\s\-()+\.]+$/
                             }
                         }
                     },
