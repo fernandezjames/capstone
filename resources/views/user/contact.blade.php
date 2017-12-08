@@ -27,7 +27,12 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 
-
+<style type="text/css">
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+</style>
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
@@ -77,13 +82,8 @@
               </div>
             </div>
         
-         <div id="fourth-block">
-            <div class="line">
-               
-                  MAP
-
+            <div id="map">
             </div>
-         </div>
       </section>
       <!-- FOOTER -->   
       <footer>
@@ -119,5 +119,22 @@
          });	
           
       </script> 
+      <!-- script for map -->
+      <script>
+        function initMap() {
+          var uluru = {lat: 15.776771, lng: 120.9671684};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1wJL0bmkdupz-AH-TwVxiMnMMQDwPa9g&callback=initMap">
+      </script>
    </body>
 </html>
