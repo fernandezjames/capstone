@@ -95,7 +95,7 @@
             </div>
             <div class="s-12 l-6">
                <p class="right">
-                  Maharlika Suite
+                  Maharlika Suite Reservation
                </p>
             </div>
          </div>
