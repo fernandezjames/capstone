@@ -39,7 +39,7 @@
       @include('user/nav')
       <section>
          <div id="head">
-            <div class="line">
+            <div class="line" style="font-size: 25px">
                <h1>Contacts</h1>
             </div>
          </div>
@@ -47,7 +47,8 @@
             <div class="line">
               <div class="col-lg-12">
                      <div class="contact-details2">
-                        <h2>Our Address:</h2>
+                         <div style="font-size: 17px">
+                        <h2>Our Address</h2></div>
                         <h3 class="fa fa-map-marker"> Address: Maharlika Highway, Brgy.Caanawan, San Jose City, Nueva Ecija 3121 </h3>
                         <div><h3 class="fa fa-mobile"> Mobile No. 09124800941</h3></div>
                      </div>
@@ -89,12 +90,12 @@
       <footer>
          <div class="line">
             <div class="s-12 l-6">
-               <p>Copyright 2015, Vision Design - graphic zoo
+               <p>Copyright @2018
                </p>
             </div>
             <div class="s-12 l-6">
                <p class="right">
-                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+                  Maharlika Suite Reservation
                </p>
             </div>
          </div>

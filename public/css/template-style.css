@@ -73,7 +73,7 @@ nav ul li ul li {
 	background: #fff;
 }
 #fourth-block {
-	background: rgb(0, 30, 34, .8);
+	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 }
 footer {
 	background: none repeat scroll 0 0 #2fcbe0;
@@ -169,7 +169,7 @@ a.button {
 }
 .content-block {
 	background: none repeat scroll 0 0 rgb(0, 30, 34);
-	padding: 2.5em;
+	padding: 5px; 
 }
 .content-block h3 {
 	color: #fff;
