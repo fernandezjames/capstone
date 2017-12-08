@@ -22,8 +22,13 @@
       <!--modal-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
-
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         .newline{
+            padding-bottom: 20px;
+            padding-top: 10px
+         }
+      </style>
       
    </head>
 <!--    <style type="text/css">
@@ -56,31 +61,28 @@
          <div id="first-block">
             <div class="line">
                <h2>ATTRACTIONS</h2><p>
+               <div class="newline"></div>
                </p>
                <div class="margin">
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-beer fa-2x"></i>
                      <h3>Restobar</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
+                     <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-music fa-2x"></i>
                      <h3>Live Band</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
+                     <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-tint fa-2x"></i>
                      <h3>Pool</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
+                     <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-cutlery fa-2x"></i>
-                     <h3>Catering Services</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
+                     <h3>Catering</h3>
+                     <p>INSERT TEXT</p>
                   </div>
                </div>
             </div>
@@ -102,18 +104,15 @@
                <div id="owl-demo2" class="owl-carousel owl-theme">
                   <div class="item">
                      <h2>Amazing responsive template</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                     </p>
+                     <p class="s-12 m-12 l-8 center"></p>
                   </div>
                   <div class="item">
                      <h2>Responsive components</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                     </p>
+                     <p class="s-12 m-12 l-8 center"></p>
                   </div>
                   <div class="item">
                      <h2>Retina ready</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit  lobortis nisl ut aliquip ex ea commodo consequat.
-                     </p>
+                     <p class="s-12 m-12 l-8 center"></p>
                   </div>
                </div>
             </div>
@@ -127,7 +126,7 @@
             </div>
             <div class="s-12 l-6">
                <p class="right">
-                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Maharlika Suites</a>
+                  <a class="right" style="" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Maharlika Suites</a>
                </p>
             </div>
          </div>
