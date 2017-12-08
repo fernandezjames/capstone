@@ -3,44 +3,69 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
-      <title>Maharlika Suite Reservation</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-            <link rel="stylesheet" href="css/style.css">
-            <link rel="stylesheet" href="css/contact.css">
-            <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.css">
+      <title>Responsive Design website template</title>
+      @include('plugins')
+      <link rel="stylesheet" href="css/contact.css">
       <!-- CUSTOM STYLE -->  
-      <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
       <!--[if lt IE 9]>
-	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
        <!--modal-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 
-<style type="text/css">
-  #map {
-    height: 400px;
-    width: 100%;
-  }
-</style>
+
+   </head>
+   <style type="text/css">
+        @font-face {
+        font-family: Rise;
+        src: url("font/Rise of Kingdom.ttf");
+    }
+     }
+      .thumbnail {
+        height: 80px;
+      }
+      #first-block {
+        text-align: center !important;
+        padding: 0px !important;
+       background: none !important;
+
+      }
+      #first-block i {
+          background: none repeat scroll 0 0 #dd1313 !important;
+          border-radius: 100px !important;
+          color: #fff;
+          line-height: 100px !important;
+          margin: 0 auto !important;
+          width: 100px !important;
+          margin-bottom: 20px !important;
+      }
+      #first-block p {
+         font-size: 17px !important;
+      }
+/*      #fourth-block {
+        opacity: .2;
+      }*/
+      .name label {
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      }
+      .name2 label {
+        text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+      }
+       #map {
+      height: 400px;
+      width: 100%;
+    }
+   </style>
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       @include('user/nav')
       <section>
          <div id="head">
-            <div class="line" style="font-size: 25px">
-               <h1>Contacts</h1>
+            <div class="line name" style="font-size: 25px">
+               <label style="font-size: 60px; color: #d80f0f; font-family: Rise;">Contacts</label>
             </div>
          </div>
          <div id="content">
@@ -48,13 +73,13 @@
               <div class="col-lg-12">
                      <div class="contact-details2">
                          <div style="font-size: 17px">
-                        <h2>Our Address</h2></div>
+                        <label style="font-size: 40px; font-family: Rise;">Contacts</label></div>
                         <h3 class="fa fa-map-marker"> Address: Maharlika Highway, Brgy.Caanawan, San Jose City, Nueva Ecija 3121 </h3>
                         <div><h3 class="fa fa-mobile"> Mobile No. 09124800941</h3></div>
                      </div>
                     <div class="col-lg-6">
                      <div class="contact-details">
-                       Opening Hours:
+                       <label style="font-size: 40px; font-family: Rise;">Opening Hours:</label>
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
@@ -68,7 +93,7 @@
                     </div>
                     <div class="col-lg-6">
                      <div class="contact-details3">
-                       Opening Hours:
+                       <label style="font-size: 40px; font-family: Rise;">Opening Hours:</label>
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
