@@ -39,17 +39,17 @@
          </div>
          <div id="content">
             <div class="line">
-               
-                  
-             
-        
-                  <div class="col-lg-12">
+              <div class="col-lg-12">
                      <div class="contact-details2">
                         <h2>Our Address:</h2>
                         <p>Address: Caanawan, San Jose City, 3121 Nueva Ecija</p> 
                         <p>Phone: (044) 511 3918</p>
+                        <p>dgsdhfsdfhkjskf</p>
+                        <p>Address: Caanawan, San Jose City, 3121 Nueva Ecija</p> 
+                        <p>Phone: (044) 511 3918</p>
+                        <p>dgsdhfsdfhkjskf</p>
                      </div>
-                     <div class="col-lg-4">
+                    <div class="col-lg-6">
                      <div class="contact-details">
                        Opening Hours:
                        <p> Monday:24-Hours</p>
@@ -61,17 +61,24 @@
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
                        <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
-                       <p> Monday:24-Hours</p>
+                      </div>
                     </div>
-                  </div>
-        
+                    <div class="col-lg-6">
+                     <div class="contact-details3">
+                       Opening Hours:
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                       <p> Monday:24-Hours</p>
+                      </div>
+                    </div>
+              </div>
             </div>
-         </div>
         
          <div id="fourth-block">
             <div class="line">

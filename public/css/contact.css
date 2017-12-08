@@ -1,3 +1,6 @@
+#content {
+   padding: 0 !important; 
+}
 .contact-details{
 	padding: 20px;
 	background: #efefef;
@@ -5,7 +8,13 @@
 	margin-bottom: 10px;
 }
 .contact-details2{
-	padding: 20px;
+	margin-top: 5px;
+	background: #efefef;
+	margin-bottom: 10px;
+}
+.contact-details3{
+	float: right;
+	margin-top: 5px;
 	background: #efefef;
 	margin-bottom: 10px;
 }
