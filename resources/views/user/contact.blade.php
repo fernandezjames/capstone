@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="owl-carousel/owl.theme.css">
             <link rel="stylesheet" href="css/style.css">
             <link rel="stylesheet" href="css/contact.css">
+            <link rel="stylesheet" type="text/css" href="fa/css/font-awesome.css">
       <!-- CUSTOM STYLE -->  
       <link rel="stylesheet" href="css/template-style.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -42,12 +43,8 @@
               <div class="col-lg-12">
                      <div class="contact-details2">
                         <h2>Our Address:</h2>
-                        <p>Address: Caanawan, San Jose City, 3121 Nueva Ecija</p> 
-                        <p>Phone: (044) 511 3918</p>
-                        <p>dgsdhfsdfhkjskf</p>
-                        <p>Address: Caanawan, San Jose City, 3121 Nueva Ecija</p> 
-                        <p>Phone: (044) 511 3918</p>
-                        <p>dgsdhfsdfhkjskf</p>
+                        <h3 class="fa fa-map-marker"> Address: Maharlika Highway, Brgy.Caanawan, San Jose City, Nueva Ecija 3121 </h3>
+                        <div><h3 class="fa fa-mobile"> Mobile No. 09124800941</h3></div>
                      </div>
                     <div class="col-lg-6">
                      <div class="contact-details">
