@@ -51,7 +51,7 @@
       #first-block {
         text-align: center;
         padding: 0px;
-        background-color: #001e22;
+       background: none;
 
       }
       #first-block i {
@@ -84,18 +84,18 @@
             <div class="line">
                <div class="margin">
                   <center><div class="col-lg-6 col-md-6">
-                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
-                      <img src="img/logo.png" data-toggle="modal" data-target="#single">
+                     <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
+                      <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/single.jpg" data-toggle="modal" data-target="#single">
                      </div>
                   </div></center>
                   <center><div class="col-lg-6 col-md-6">
-                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
-                       <img src="img/logo.png" data-toggle="modal" data-target="#family">
+                     <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
+                       <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/family.jpg" data-toggle="modal" data-target="#family">
                      </div>
                   </div></center>
                   <center><div class="col-lg-12 col-md-12">
-                     <div class="content-block margin-bottom" style="height: 240px; width: 450px; border-radius: 10px;">
-                      <img src="img/logo.png" data-toggle="modal" data-target="#familysuite">
+                     <div class="content-block margin-bottom" style="height: 300px; width: 100%; border-radius: 10px;">
+                      <img style="height: 100%; width: 100%; border-radius: 10px;" src="img/rooms/suites.jpg" data-toggle="modal" data-target="#familysuite">
                      </div>
                   </div></center>
                </div>
@@ -387,27 +387,27 @@
                                        <!-- Bottom switcher of slider -->
                                        <ul class="hide-bullets">
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                                               <a class="thumbnail" id="carousel-selector-0"><img src="img/rooms/family.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                                               <a class="thumbnail" id="carousel-selector-1"><img src="img/rooms/family2.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                                               <a class="thumbnail" id="carousel-selector-2"><img src="img/rooms/family3.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                                               <a class="thumbnail" id="carousel-selector-3"><img src="img/rooms/family4.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                                               <a class="thumbnail" id="carousel-selector-4"><img src="img/rooms/family5.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+                                               <a class="thumbnail" id="carousel-selector-5"><img src="img/rooms/single.jpg"></a>
                                            </li>
                                        </ul>                 
                                </div>
@@ -520,27 +520,27 @@
                                        <!-- Bottom switcher of slider -->
                                        <ul class="hide-bullets">
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                                               <a class="thumbnail" id="carousel-selector-0"><img src="img/rooms/suites.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                                               <a class="thumbnail" id="carousel-selector-1"><img src="img/rooms/suites1.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                                               <a class="thumbnail" id="carousel-selector-2"><img src="img/rooms/suites2.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                                               <a class="thumbnail" id="carousel-selector-3"><img src="img/rooms/suites3.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                                               <a class="thumbnail" id="carousel-selector-4"><img src="img/rooms/suites5.jpg"></a>
                                            </li>
 
                                            <li class="col-sm-2">
-                                               <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+                                               <a class="thumbnail" id="carousel-selector-5"><img src="img/rooms/family2.jpg"></a>
                                            </li>
                                        </ul>                 
                                </div>
