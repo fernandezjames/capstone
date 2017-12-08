@@ -40,7 +40,7 @@
       @include('user/nav')
       <section>
          <div id="head">
-            <div class="line">
+            <div class="line" style="font-size: 25px">
                <h1>History</h1>
             </div>
          </div>

@@ -40,12 +40,12 @@
       @include('user/nav')
       <section>
          <div id="head">
-            <div class="line">
+            <div class="line" style="font-size: 25px">
                <h1>Mission & Vision</h1>
             </div>
          </div>
          <div id="content">
-            <div class="line">
+            <div class="line" style="font-size: 35px">
                <h2>Mission</h2>
                <p class="s-12 m-12 l-8 center" style="font-size:25px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil.
                </p>
