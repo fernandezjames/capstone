@@ -4,7 +4,7 @@
          <div class="line">
             <div class="top-nav">              
                <div class="logo hide-l">
-                  <img src="img/logo.png">
+                  <img style="width: 50px; height: 50px;" src="img/logo.png">
                </div>                  
                <p class="nav-text">Custom menu text</p>
                <div class="top-nav s-12 l-5" style="height: 50px;">
