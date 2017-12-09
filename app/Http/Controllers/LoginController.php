@@ -19,22 +19,21 @@ class LoginController extends Controller
 		$userInfo = User::all();
         $loggedInCreds = Request::all();
         
-        if(Auth::attempt(['email' =>$loggedInCreds['email'], 'password' => $loggedInCreds['login-password']])) {
+        if(Auth::attempt(['email' =>$loggedInCreds['emailAddress'], 'password' => $loggedInCreds['loginPassword']])) {
             $audit_trail = new AuditTrail;
-            $audit_trail['user_id'] = Auth::user()->id;
+            $audit_trail['user_no'] = Auth::user()->id;
             $audit_trail['action'] = "Logged-in";
-            $audit_trail['user_role'] = Auth::user()->user_type;
             $audit_trail->save();
             if(Auth::user()->user_type == "Admin"){
                 return Redirect::route('dashboard');
             }else{
+				return response()->json(["success" => "yes"]);
                 return Redirect::route('home');
-                // Alert::message("Error!", "Invalid Credentials", "error"); 
-                // return redirect('login');
-            }
-        }
+        	}
+       	}
         else{
-            Alert::message("", "Invalid Credentials", "error"); 
+            // Alert::message("", "Invalid Credentials", "error"); 
+            return response()->json(["error" => "yes"]);
             return redirect('login');
         }
 	}	
@@ -52,4 +51,12 @@ class LoginController extends Controller
 		return response()->json(["success" => "yes"]);
 	}	
 	
+	public function loggedOut()
+    {
+        Auth::logout();
+        // Alert::message("", "Successfully logged out", "success"); 
+        // return redirect('login');
+        return back(); 
+        return redirect()->back();
+    }
 }

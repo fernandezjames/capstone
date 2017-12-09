@@ -37,3 +37,5 @@ Route::get('/mission', array('uses' => 'HomeController@mission', 'as' => 'missio
 
 
 Route::post('/save', array('uses' => 'LoginController@register', 'as' => 'register'));
+Route::post('/loggedIn', array('uses' => 'LoginController@loggedIn', 'as' => 'loggedIn'));
+Route::get('/logout', array('uses' => 'LoginController@loggedOut', 'as' => 'loggedOut'));

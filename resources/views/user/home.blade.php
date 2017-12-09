@@ -14,11 +14,20 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
       <style>
          .newline{
             padding-bottom: 20px;
             padding-top: 10px
          }
+         @font-face {
+        font-family: Rise;
+        src: url("font/Rise of Kingdom.ttf");
+    }
+
+      .name label {
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+      }
       </style>
       
    </head>
@@ -50,29 +59,29 @@
          </div>
          <!-- FIRST BLOCK --> 	
          <div id="first-block">
-            <div class="line">
-               <h2>ATTRACTIONS</h2><p>
+            <div class="line name">
+               <label style="font-size: 40px; font-family: Rise;">ATTRACTIONS</label><p>
                <div class="newline"></div>
                </p>
                <div class="margin">
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-beer fa-2x"></i>
-                     <h3>Restobar</h3>
+                     <h3 style="font-family: Rise">Restobar</h3>
                      <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-music fa-2x"></i>
-                     <h3>Live Band</h3>
+                     <h3 style="font-family: Rise" style="font-family: Rise" style="font-family: Rise">Live Band</h3>
                      <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-tint fa-2x"></i>
-                     <h3>Pool</h3>
+                     <h3 style="font-family: Rise" style="font-family: Rise">Pool</h3>
                      <p>INSERT TEXT</p>
                   </div>
                   <div class="s-12 m-6 l-3 margin-bottom">
                      <i class="fa fa-cutlery fa-2x"></i>
-                     <h3>Catering</h3>
+                     <h3 style="font-family: Rise">Catering</h3>
                      <p>INSERT TEXT</p>
                   </div>
                </div>
