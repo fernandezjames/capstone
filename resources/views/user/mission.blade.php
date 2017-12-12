@@ -128,6 +128,7 @@
             </div>
          </div>
       </footer>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  

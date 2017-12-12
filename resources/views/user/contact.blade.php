@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width" />
-      <title>Responsive Design website template</title>
-      @include('plugins')
-      <link rel="stylesheet" href="css/contact.css">
-      <!-- CUSTOM STYLE -->  
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <!--[if lt IE 9]>
-         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Responsive Design website template</title>
+        @include('plugins')
+
+        <!-- CUSTOM STYLE -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-      <![endif]-->
-       <!--modal-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-   </head>
+        <![endif]-->
+        <!--modal-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
    <style type="text/css">
         @font-face {
         font-family: Rise;
         src: url("font/Rise of Kingdom.ttf");
     }
-     }
       .thumbnail {
         height: 80px;
       }
@@ -110,6 +107,7 @@
         
             <div id="map">
             </div>
+         </div>
       </section>
       <!-- FOOTER -->   
       <footer>
@@ -125,6 +123,7 @@
             </div>
          </div>
       </footer>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
