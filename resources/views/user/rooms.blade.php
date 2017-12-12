@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
-      <title>Responsive Design website template</title>
+      <title>Maharlika Suite Reservation</title>
       @include('plugins')
 
       <!-- CUSTOM STYLE -->  
