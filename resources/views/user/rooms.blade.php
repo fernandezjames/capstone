@@ -4,6 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width" />
       <title>Maharlika Suite Reservation</title>
+       <link rel="icon" href="img/icon.png">
       @include('plugins')
 
       <!-- CUSTOM STYLE -->  
